@@ -1,53 +1,48 @@
-# 🍽️ Mega Chef da Computaria
+# Mega Chef da Computaria - Frontend
 
-Bem-vindo ao repositório oficial do **Mega Chef da Computaria** — um assistente culinário virtual desenvolvido para tornar a experiência na cozinha mais divertida, personalizada e tecnológica!
+Este é o frontend do projeto Mega Chef da Computaria, um assistente culinário virtual.
 
-<img src="https://i.ibb.co/cch0cpcC/logo.png" alt="Mascote Mega Chef da Computaria" width="200" />
+## Tecnologias utilizadas
 
----
+- React
+- Vite
+- Tailwind CSS
+- Lucide Icons
+- shadcn/ui
 
-## 🧠 Sobre o projeto
-
-O **Mega Chef da Computaria** é um chatbot culinário que utiliza inteligência artificial para:
-
-- 🥕 Sugerir receitas com base nos ingredientes disponíveis  
- - 🧂 Dar dicas de preparo e truques para acertar no prato  
- - 🥦 Adaptar receitas para restrições e preferências alimentares  
- - 🍷 Sugerir harmonizações entre comidas e bebidas  
- - 🔪 Ensinar segredos para aprimorar habilidades na cozinha
-
-   > Foco total em culinária — nada de outros assuntos por aqui!
-   
----
-
-   ## 🚀 Tecnologias utilizadas
-
-  - HTML5 + CSS3  
- - JavaScript  
- - [ChatGPT / GPT-4 API](https://platform.openai.com/)  
- - Google AI Studio (para prototipagem do chatbot)  
- - Ilustração do mascote gerada com IA
-
----
-
-   ## 🐭 Nosso mascote
-
-   O mascote é um rato branco simpático, estiloso e pronto para cozinhar!  
- Ele veste um **chapéu de chef rosa**, usa **óculos Juliet amarelos**  
- e sempre tem uma dica culinária na ponta do bigode.
-
----
-
-## 📂 Estrutura do repositório
+## Instalação
 
 ```bash
- 📁 mega-chef-da-computaria
- ├── public/
- │   └── imagens/
- │       └── mascote.png
- ├── src/
- │   └── scripts/
- │       └── chatbot.js
- ├── index.html
- ├── style.css
- └── README.md
+pnpm install
+```
+
+## Execução
+
+```bash
+pnpm run dev
+```
+
+## Estrutura do projeto
+
+```
+chatbot-frontend/
+├── public/
+│   └── imagens/
+│       └── logo.png
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── Chatbot.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+└── package.json
+```
+
+## Comunicação com o Backend
+
+O frontend se comunica com o backend através da API REST. Certifique-se de que o backend esteja rodando na porta 3001 antes de iniciar o frontend.
+
